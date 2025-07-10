@@ -1,0 +1,13 @@
+[Unit]
+Description=Sample Java App Service
+After=network.target
+
+[Service]
+Type=simple
+User=ec2-user
+WorkingDirectory=/usr/local/src/java_sample_app/
+ExecStart=/usr/local/src/java_sample_app/start.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

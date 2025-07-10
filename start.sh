@@ -1,0 +1,2 @@
+#!/bin/bash
+java -javaagent:..\dd-java-agent.jar -Ddd.service=datadog_java_curd_sample -Ddd.env=dev -Ddd.version=0.0.1 -Ddd.logs.injection=true -Ddd.dbm.propagation.mode=full -Ddd.integration.jdbc-datasource.enabled=true -Ddd.appsec.enabled=true -Ddd.iast.enabled=true -Ddd.profiling.enabled=true -jar datadog-0.0.1-SNAPSHOT.jar

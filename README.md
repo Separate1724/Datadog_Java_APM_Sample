@@ -1,1 +1,0 @@
-# Datadog_APM_Java_Sample
